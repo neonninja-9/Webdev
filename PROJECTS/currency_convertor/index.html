@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body class="container">
+    <header class="header">
+      <button class="menu">
+        <i class="material-icons-outlined"> menu </i>
+      </button>
+      <h1>Currency Converter</h1>
+      <nav class="nav"></nav>
+    </header>
+
+    <main class="main">
+      <form>
+        <div class="options">
+          <label for="to">To</label>
+          <select name="to" id="to" class="select"></select>
+          <img
+          src="https://flagsapi.com/IN/flat/64.png"
+            class="to-flag"
+            alt="IN flag"
+            style="width: 64px; height: 64px"
+          />
+          <input type="text" placeholder="Amount" />
+        </div>
+        <i class="material-icons-outlined">swap_horiz</i>
+        <div>
+          <label for="from">From</label>
+          <select name="from" id="from" class="select"></select>
+          <img
+          class = "from-flag"
+            alt="US flag"
+            style="width: 64px; height: 64px"
+          />
+          <input type="text" placeholder="Amount" />
+        </div>
+        <button id="convert-btn">Convert</button>
+      </form>
+    </main>
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

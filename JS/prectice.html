@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="practice1">
+      <p>
+        1. Select any heading and change its color every time you click a
+        button.
+      </p>
+      <h1>Heading 1</h1>
+      <button>Change color</button>
+    </div>
+    <div id="practice2">
+      <p>
+        2. Create a &lt;ul&gt; with &lt;li>&gt; items and use JS to add a new
+        item when a button is clicked.
+      </p>
+      <h1>random list</h1>
+      <button id="btn2">Add item to list</button>
+      <ul id="randomList"></ul>
+    </div>
+  </body>
+  <script>
+    let Heading = document.querySelector("h1");
+    let btn = document.querySelector("button");
+
+    btn.addEventListener("click", function () {
+      let randomColor =
+        "#" +
+        Math.floor(Math.random() * 16777215)
+          .toString(16)
+          .padStart(6, "0");
+
+      Heading.style.color = randomColor;
+    });
+
+    //practice 2
+    const btn2 = document.querySelector("#btn2");
+    const list = document.querySelector("#randomList");
+    let count = 1;
+    btn2.addEventListener("click", () => {
+      let newEl = document.createElement("li");
+      newEl.innerText = `Item ${count}`;
+      count++;
+      list.appendChild(newEl);
+    });
+  </script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="main-title">Hello, Gourav!</h1>
+    <button id="change-btn">Change Text</button>
+  </body>
+  <script>
+    const btn = document.getElementById("change-btn");
+    const title = document.getElementById("main-title");
+
+    btn.addEventListener("click", function () {
+      title.textContent = "You clicked the button!";
+      title.style.color = "blue";
+    });
+  </script>
+</html>

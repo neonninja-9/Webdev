@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hoverTitle">Hover over me</h1>
+    <hr />
+    <h1>typing priter</h1>
+    <input type="text" id="inputField" placeholder="Type something..." />
+    <p id="inputOutput"></p>
+    <hr />
+    <h1>key detector</h1>
+    <input type="text" id="myInput" placeholder="Type here..." />
+    <p id="output"></p>
+
+    <script>
+        // Hover effect
+        let hoverTitle = document.querySelector("#hoverTitle");
+        hoverTitle.addEventListener("mouseenter", () => {
+          hoverTitle.style.color = "green";
+        });
+        hoverTitle.addEventListener("mouseleave", () => {
+          hoverTitle.style.color = "black";
+        });
+
+        // Typing input
+        let inputField = document.querySelector("#inputField");
+        let inputOutput = document.querySelector("#inputOutput");
+
+        inputField.addEventListener("input", () => {
+          inputOutput.innerText = "You typed: " + inputField.value;
+        });
+
+        // Key detection
+        const keyInput = document.getElementById("myInput");
+        const keyOutput = document.getElementById("output");
+
+        // Uncomment to enable keydown event on the input
+        keyInput.addEventListener("keydown", (e) => {
+          keyOutput.innerText = "You pressed: " + e.key;
+        });
+
+        // Uncomment to enable keyup event on the input
+        // keyInput.addEventListener("keyup", function (e) {
+        //   keyOutput.innerText ="Key released: " + e.key;
+        // });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.ctrlKey && e.key === "s") {
+            e.preventDefault();
+            alert("Ctrl + S was pressed. Custom save triggered!");
+          }
+        });
+        document.addEventListener("dblclick" , () =>{
+            console.log("Double click");
+            
+        }
+    )
+    </script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <div class="home">
+          <span class="material-symbols-outlined">home</span>
+        </div>
+        <div class="search-box">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="What do you want to play?" />
+          <span class="material-symbols-outlined">Browse</span>
+        </div>
+        <div class="navlinks">
+          <a href="#">Premium</a>
+          <a href="#">Support</a>
+          <a href="#">Downloads</a>
+        </div>
+        <div id="right-links">
+          <a href="#"
+            ><span class="material-symbols-outlined download-btn">download</span
+            >Install App</a>
+          <a href="#">Sign Up</a>
+          <button class="btn login">Log in</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="sidebar">
+        <div class="library">
+          <h2>Your Library</h2>
+          <span class="material-symbols-outlined">add</span>
+        </div>
+        <div class="panels">
+          <div class="panel">
+            <strong>Create your first playlist</strong>
+            <p class="muted">It's easy, we'll help you</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="panel">
+            <strong>Let's find some podcasts to follow</strong>
+            <p class="muted">We'll keep you updated on new episodes</p>
+            <button>Browse podcasts</button>
+          </div>
+        </div>
+        <div class="footlinks">
+          <a href="#">Legal</a>
+          <a href="#">safty and Privacy center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">About Ads</a>
+          <a href="#">Accesibility</a>
+          <a href="#">Legal</a>
+          <a href="#">Cookies</a>
+        </div>
+        <div class="btn language">
+          <span class="material-symbols-outlined">language</span>
+          <p>English</p>
+        </div>
+      </aside>
+
+      <section class="songArea">
+        <h2>Trending Songs</h2>
+        <div class="scroll-wrapper">
+          <button id="trendingLeft" class="scroll-btn">&#8249;</button>
+          <div class="scroll-row" id="trendingSongs">
+            <div class="card">
+              <div class="cover"></div>
+              <div>Pardesiya</div>
+              <div class="muted">Sachin-Jigar</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Aavan Jaavan</div>
+              <div class="muted">Pritam</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Thodi Si Daaru</div>
+              <div class="muted">AP Dhillon</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Firestorm</div>
+              <div class="muted">Thaman S</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>MF Gabhrul</div>
+              <div class="muted">Karan Aujla</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Pardesiya</div>
+              <div class="muted">Sachin-Jigar</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Aavan Jaavan</div>
+              <div class="muted">Pritam</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Thodi Si Daaru</div>
+              <div class="muted">AP Dhillon</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Firestorm</div>
+              <div class="muted">Thaman S</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>MF Gabhrul</div>
+              <div class="muted">Karan Aujla</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Pardesiya</div>
+              <div class="muted">Sachin-Jigar</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Aavan Jaavan</div>
+              <div class="muted">Pritam</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Thodi Si Daaru</div>
+              <div class="muted">AP Dhillon</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Firestorm</div>
+              <div class="muted">Thaman S</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>MF Gabhrul</div>
+              <div class="muted">Karan Aujla</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Pardesiya</div>
+              <div class="muted">Sachin-Jigar</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Aavan Jaavan</div>
+              <div class="muted">Pritam</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Thodi Si Daaru</div>
+              <div class="muted">AP Dhillon</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Firestorm</div>
+              <div class="muted">Thaman S</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>MF Gabhrul</div>
+              <div class="muted">Karan Aujla</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Pardesiya</div>
+              <div class="muted">Sachin-Jigar</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Aavan Jaavan</div>
+              <div class="muted">Pritam</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Thodi Si Daaru</div>
+              <div class="muted">AP Dhillon</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>Firestorm</div>
+              <div class="muted">Thaman S</div>
+            </div>
+            <div class="card">
+              <div class="cover"></div>
+              <div>MF Gabhrul</div>
+              <div class="muted">Karan Aujla</div>
+            </div>
+          </div>
+          <button id="trendingRight" class="scroll-btn">&#8250;</button>
+        </div>
+
+        <h2>Popular Artists</h2>
+        <div class="scroll-wrapper">
+          <button id="artistLeft" class="scroll-btn">&#8249;</button>
+          <div class="scroll-row" id="popularArtists">
+            <div class="card">
+              <div class="circle"></div>
+              <div>Pritam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>A.R. Rahman</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Arijit Singh</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Sachin-Jigar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Vishal-Shekhar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Atif Aslam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Pritam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>A.R. Rahman</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Arijit Singh</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Sachin-Jigar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Vishal-Shekhar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Atif Aslam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Pritam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>A.R. Rahman</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Arijit Singh</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Sachin-Jigar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Vishal-Shekhar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Atif Aslam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Pritam</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>A.R. Rahman</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Arijit Singh</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Sachin-Jigar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Vishal-Shekhar</div>
+              <div class="muted">Artist</div>
+            </div>
+            <div class="card">
+              <div class="circle"></div>
+              <div>Atif Aslam</div>
+              <div class="muted">Artist</div>
+            </div>
+          </div>
+          <button id="artistRight" class="scroll-btn">&#8250;</button>
+        </div>
+      </section>
+      <section id="music-player">
+        <span id="song-img"
+          ><img
+            src="logo.png"
+            alt="Song Cover"
+            style="width: 48px; height: 48px; border-radius: 6px"
+        /></span>
+        <div id="song-info">
+          <div id="song-title">Song Title</div>
+          <div id="song-artist">Artist Name</div>
+        </div>
+        <div id="player-controls">
+          <span class="material-symbols-outlined">skip_previous</span>
+          <span class="material-symbols-outlined">play_arrow</span>
+          <span class="material-symbols-outlined">skip_next</span>
+        </div>
+        <div id="player-progress">
+          <span id="current-time">0:00</span>
+          <input type="range" id="progress-bar" min="0" max="100" value="0" />
+          <span id="duration">3:45</span>
+        </div>
+        <div id="player-volume">
+          <span class="material-symbols-outlined">volume_up</span>
+          <input type="range" id="volume-bar" min="0" max="100" value="80" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

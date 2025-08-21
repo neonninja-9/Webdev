@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube</title>
+    <meta
+      name="description"
+      content="A responsive YouTube-like layout using only HTML and CSS."
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">
+        <img src="logo.webp" alt="Logo" width="32" height="32" style="vertical-align:middle;" />
+        <span>Tube</span>
+      </a>
+      <form class="search-box" action="#" method="get">
+        <input type="search" name="q" placeholder="Search" />
+        <button type="submit">🔍</button>
+      </form>
+    </header>
+    <div style="display:flex; min-height:calc(100vh - 40px);">
+      <nav class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Shorts</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Library</a>
+      </nav>
+      <main class="content-container">
+        <section class="grid">
+          <article class="card">
+            <div class="thumb"></div>
+            <div class="meta">
+              <h3 class="title">Build a YouTube UI with Pure HTML & CSS</h3>
+              <p class="sub">CodeCraft • 1.2M views • 2 days ago</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"></div>
+            <div class="meta">
+              <h3 class="title">Top 10 Linux Tools You Should Know</h3>
+              <p class="sub">TuxTalks • 845K views • 1 week ago</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"></div>
+            <div class="meta">
+              <h3 class="title">Responsive Grid Layouts with CSS Only</h3>
+              <p class="sub">Layout Lab • 412K views • 3 weeks ago</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
