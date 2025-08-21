@@ -1,0 +1,14 @@
+#ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 20px 20px, #ff4d4d, #d10000 80%);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+div:hover {
+    margin-top: 500px;
+}

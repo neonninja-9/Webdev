@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>catch the ball</h1>
+    <div id="ball">
+        
+
+    </div>
+    <script>
+const ball = document.getElementById('ball');
+
+function randomPosition() {
+    const maxX = window.innerWidth - ball.offsetWidth;
+    const maxY = window.innerHeight - ball.offsetHeight;
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+    ball.style.left = x + 'px';
+    ball.style.top = y + 'px';
+}
+
+// Initial position
+randomPosition();
+
+// Move ball when mouse is near
+document.addEventListener('mousemove', function(e) {
+    const ballRect = ball.getBoundingClientRect();
+    const distance = Math.hypot(
+        e.clientX - (ballRect.left + ballRect.width/2),
+        e.clientY - (ballRect.top + ballRect.height/2)
+    );
+    if (distance < 100) { // Change 100 for sensitivity
+        randomPosition();
+    }
+});
+</script>
+</body>
+</html>

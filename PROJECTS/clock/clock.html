@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Clock -->
+    <div class="container">
+      <h1 id="clock">00:00:00</h1>
+      <h3 id="date"></h3>
+      <button id="toggleFormat">Switch to 12h</button>
+    </div>
+
+    <!-- Timer -->
+    <div class="container timer-container">
+      <label for="timerInput">Timer</label>
+      <input
+        type="text"
+        id="timerInput"
+        placeholder="HH:MM:SS or MM:SS or SS"
+        title="Enter time as HH:MM:SS, MM:SS, or SS"
+        autocomplete="off"
+      />
+      <h1 id="timerDisplay">00:00:00</h1>
+      <div class="buttons">
+        <button id="startTimer">▶Start</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="container stopwatch-container">
+      <h1 id="stopwatchDisplay">00:00:00:00</h1>
+      <div class="buttons">
+        <button id="resetStopwatch">Reset</button>
+        <button id="startStopwatch">▶Start</button>
+        <button id="lapStopwatch">Lap</button>
+      </div>
+      <button id="downloadLaps">⬇️ Download Laps</button>
+    </div>
+    <section class="laps">
+      <ul id="lapList"></ul>
+    </section>
+
+    <script src="clock.js"></script>
+  </body>
+</html>
