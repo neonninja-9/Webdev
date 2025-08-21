@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gourav Sharma">
+    <meta name="description" content="Login and Signup page for GMX.COM">
+    <title>GMX.COM - Login</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">GMX.COM</h1>
+        <form class="search-form" role="search">
+            <input type="text" placeholder="Search here" aria-label="Search" />
+            <button type="submit" aria-label="Menu">≡</button>
+        </form>
+    </header>
+    <hr>
+    <main>
+        <section class="auth-section">
+            <nav class="auth-nav">
+                <button id="show-login" class="active">Login</button>
+                <button id="show-signup">Sign up</button>
+            </nav>
+            <div id="login" class="auth-form">
+                <form action="action.php" name="Login" autocomplete="on">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="login" id="username" placeholder="Enter user name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="login" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+            <div id="Signup" class="auth-form" style="display:none;">
+                <form action="action.php" name="Sign up" autocomplete="on">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter user email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newpass">Create password</label>
+                        <input type="password" name="newpass" id="newpass" placeholder="Enter your password" required>
+                        <div class="show-password-row">
+                            <input type="checkbox" id="show-password">
+                            <label for="show-password">Show Password</label>
+                        </div>
+                        <div id="strength-indicator"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="conpass">Confirm password</label>
+                        <input type="password" name="newpass" id="conpass" placeholder="Re-Enter your password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <a href="about.html">Gourav Sharma</a>
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+
+</html>
