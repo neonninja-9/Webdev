@@ -1,0 +1,202 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    background: rgba(15, 15, 35, 0.8);
+    border-radius: 18px;
+    padding: 32px 28px;
+    width: 100%;
+    max-width: 420px;
+    border: 2px solid #00f3ff;
+    box-shadow: 
+        0 0 15px #00f3ff,
+        0 0 30px rgba(0, 243, 255, 0.3),
+        inset 0 0 10px rgba(0, 243, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 
+        0 0 5px #00f3ff,
+        0 0 10px #00f3ff,
+        0 0 20px #00f3ff,
+        0 0 40px #008cff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 5px #00f3ff,
+            0 0 10px #00f3ff,
+            0 0 20px #00f3ff,
+            0 0 40px #008cff;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #00f3ff,
+            0 0 20px #00f3ff,
+            0 0 30px #00f3ff,
+            0 0 50px #008cff,
+            0 0 60px #008cff;
+    }
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 10vh;
+    padding: 14px 18px;
+    border: 2px solid #ff00ff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background: rgba(10, 10, 25, 0.7);
+    color: #fff;
+    box-shadow: 
+        0 0 5px #ff00ff,
+        inset 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+input[type="text"]:focus {
+    border-color: #ff00ff;
+    box-shadow: 
+        0 0 15px #ff00ff,
+        inset 0 0 10px rgba(255, 0, 255, 0.5);
+    background: rgba(15, 15, 35, 0.9);
+}
+
+button {
+    padding: 14px 22px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 2px solid #00ff9d;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 5px #00ff9d,
+        inset 0 0 5px rgba(0, 255, 157, 0.3);
+}
+
+button:hover {
+    background: rgba(0, 255, 157, 0.2);
+    box-shadow: 
+        0 0 15px #00ff9d,
+        inset 0 0 10px rgba(0, 255, 157, 0.5);
+    text-shadow: 0 0 5px #00ff9d;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+li {
+    background: rgba(20, 20, 45, 0.7);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid #00f3ff;
+    box-shadow: 
+        0 0 5px rgba(0, 243, 255, 0.5),
+        inset 0 0 5px rgba(0, 243, 255, 0.2);
+}
+
+li:hover {
+    background: rgba(30, 30, 65, 0.9);
+    box-shadow: 
+        0 0 10px rgba(0, 243, 255, 0.8),
+        inset 0 0 10px rgba(0, 243, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #a0a0ff;
+    background: rgba(15, 15, 35, 0.5);
+    border: 1px solid #ff00ff;
+    box-shadow: 
+        0 0 5px rgba(255, 0, 255, 0.5),
+        inset 0 0 5px rgba(255, 0, 255, 0.2);
+}
+
+li button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff0055;
+    color: #ff0055;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 0, 85, 0.3);
+}
+
+li button:hover {
+    background: rgba(255, 0, 85, 0.2);
+    box-shadow: 
+        0 0 10px #ff0055,
+        inset 0 0 5px rgba(255, 0, 85, 0.5);
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 24px 16px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+#task-input{
+    height: 10vh;
+}
+.branding {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #00f3ff;
+    text-shadow: 0 0 5px #00f3ff, 0 0 10px #008cff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.branding p {
+    margin: 0;
+}
